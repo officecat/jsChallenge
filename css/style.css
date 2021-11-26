@@ -1,0 +1,240 @@
+:root {
+    --main-70-color : rgba(255, 255, 255, .7);
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 24px #aaa;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg{
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#timer {
+    margin-bottom: 50px;
+}
+
+#clock {
+    font-size: 9em;
+    font-weight: 200;    
+    margin-bottom: 20px;
+}
+
+#timer button {
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px;
+    padding: 25px;
+    border-radius: 30px;
+}
+#timer button:hover {
+    /* background-color:rgba(255, 255, 255, .2); */
+    box-shadow: 0px 0px 7px rgba(225, 225, 225, 1);
+    /* box-shadow: 0px 0px 15px rgba(66, 66, 66, .5); */
+}
+#setClock{
+    background-image: url(../img/clock.svg);
+}
+#pomo{
+    background-image: url(../img/pomodoro.svg);
+}
+#break{
+    background-image: url(../img/coffee.svg);
+}
+
+
+
+#todo-list {
+    width: 500px;
+    height: 280px;
+    margin: 20px auto;
+    padding-inline-start: 0px;
+    overflow:auto;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 10px;
+}
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  #todo-list::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    /* box-shadow: inset 0px 0px 5px white; */
+  }
+#todo-list li {
+    padding: 5px;
+    font-size: 1.5em;
+    list-style-type: none; 
+    text-align: left;
+    
+}
+#todo-list li:hover {
+    box-shadow: 1px 1px 15px rgba(66, 66, 66, .5);
+}
+#todo-list button {
+    /* margin-left: 30px; */
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+#todo-list button:hover {
+    color:rgba(225, 0, 0, 1);
+}
+
+
+#pomoLog {
+    list-style-type: none;   
+    padding-inline-start: 0px;
+}
+#pomoLog li {
+    display: inline;
+    margin: 0px;
+    padding: 5px;
+    fill:rgba(225, 0, 0, 1);
+    list-style-type: none;   
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+#greeting {
+    margin-top: 30px;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+input[type=text]{
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 7px #333;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 1.8em;
+    background-color: transparent;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    color: #fff;
+    background-color: transparent;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+input[type=text]::placeholder {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 
+    0 0 3px #eee;
+    text-shadow:    
+    0 0 7px #666;
+}
+
+textarea:focus, input[type=text]:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+input[type=submit]:focus, input[type=submit]:hover {
+    outline: none;
+    background-color: rgba(225, 225, 225, .3);
+}
+
+input:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+#todo-form {
+    margin-top: 3em;
+}
+
+#todo-form input {
+    width: 500px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+	height: 20px;
+	border: 2px solid #bcbcbc;
+	cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type=checkbox]:checked {
+	background-color: #fff;
+}
+
+input[type=chechbox]:focus {
+    background-color: #fff;
+    color: #fff;
+}
+
+#quote {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    padding: 10px 10px 0px 10px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 20px #666;
+
+    transition: .5s;
+}
+
+#quote:hover{
+    padding-bottom: 10px;
+}
+
+#quote div:last-child {
+    color: var(--main-70-color);
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 2;
+    font-family: sans-serif;
+    padding-bottom: 0px;
+}
+
+
+
+#weather {
+    text-align: right;
+    
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+#weather div:last-child {
+    color: var(--main-70-color); 
+}

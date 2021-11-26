@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello! From HTML!</title>
+</head>
+<body>
+    <div id="timer">
+    <h2 id="clock">00:00:00</h2>
+    <button id="setClock" title="Clock Mode"></button>
+    <button id="pomo" title="Start Pomodoro Timer"></button>    
+    <button id="break" title="Start Short Break Timer"></button>
+    </div>
+    <form id="login-form" class="hidden">
+        <input 
+        required
+        maxlength="15"
+        type="text" 
+        placeholder="What is your name?" />
+        <input type="submit" value="Log-In"/>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input required type="text" placeholder="What is your main focus for today?" />
+    </form>
+    <ul id="todo-list">
+    </ul>
+    <ul id="pomoLog">
+    </ul>
+    <div id="quote">
+        <div></div>
+        <div class="hidden"></div>
+    </div>
+
+    <div id="weather">
+        <img>
+        <div></div>
+        <div></div>
+    </div>
+    <script src="js/clock.js"></script>    
+    <script src="js/greetings.js"></script>
+    <script src="js/pomodoro.js"></script>  
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
