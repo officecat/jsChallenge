@@ -2,9 +2,9 @@ const setPomoButton = document.querySelector("button#pomo");
 const setBreakButton = document.querySelector("button#break");
 const pomoLog = document.querySelector("#pomoLog");
 
-let POMO_MINUTE = 1;
-let BREAK_MINUTE = 1;
-let LONG_BREAK_MINUTE = 1;
+let POMO_MINUTE = 25;
+let BREAK_MINUTE = 5;
+let LONG_BREAK_MINUTE = 15;
 
 let POMO_COUNT = 0;
 let BREAK_COUNT = 0;
